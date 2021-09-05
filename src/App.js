@@ -20,7 +20,7 @@ function App() {
         </a>
 
         <script src="https://d2f33vy3qg049i.cloudfront.net/lex-web-ui-loader.min.js"></script>
-          <script>
+          <script>{`
             var loaderOpts = {
               baseUrl: 'https://d2f33vy3qg049i.cloudfront.net/',
               shouldLoadMinDeps: true
@@ -28,7 +28,7 @@ function App() {
             var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
             loader.load()
               .catch(function (error) { console.error(error); });
-          </script>
+            `}</script>
 
       </header>
     </div>
