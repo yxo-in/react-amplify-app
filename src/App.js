@@ -8,6 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
           Hello from Amplify!!!! 16082021
+          update 1 : test lex : 05092021
         </h1>
         <a
           className="App-link"
@@ -28,7 +29,7 @@ function App() {
             loader.load()
               .catch(function (error) { console.error(error); });
           </script>
-          
+
       </header>
     </div>
   );
