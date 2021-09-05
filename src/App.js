@@ -17,6 +17,18 @@ function App() {
         >
           Learn React
         </a>
+
+        <script src="https://d2f33vy3qg049i.cloudfront.net/lex-web-ui-loader.min.js"></script>
+          <script>
+            var loaderOpts = {
+              baseUrl: 'https://d2f33vy3qg049i.cloudfront.net/',
+              shouldLoadMinDeps: true
+            };
+            var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+            loader.load()
+              .catch(function (error) { console.error(error); });
+          </script>
+          
       </header>
     </div>
   );
