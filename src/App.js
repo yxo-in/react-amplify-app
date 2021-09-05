@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {Helmet} from "react-helmet";
 
 function App() {
   return (
@@ -25,16 +26,18 @@ function App() {
           Learn React
         </a>
 
-        <script src="https://d1olhb9k3nup61.cloudfront.net/lex-web-ui-loader.min.js"></script>
-        <script> {`
-          var loaderOpts = {
-            baseUrl: 'https://d1olhb9k3nup61.cloudfront.net/',
-            shouldLoadMinDeps: true
-          };
-          var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-          loader.load()
-            .catch(function (error) { console.error(error); });
-        `}</script>
+        <Helmet>
+          <script src="https://d1olhb9k3nup61.cloudfront.net/lex-web-ui-loader.min.js" type="text/javascript"/>
+          <script type="text/javascript">
+            var loaderOpts = {
+              baseUrl: 'https://d1olhb9k3nup61.cloudfront.net/',
+              shouldLoadMinDeps: true
+            };
+            var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+            loader.load()
+              .catch(function (error) { console.error(error); });
+          </script>
+         </Helmet>
 
       </header>
     </div>
