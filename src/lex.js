@@ -3,5 +3,6 @@ var loaderOpts = {
   shouldLoadMinDeps: true
 };
 
-var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-loader.load();
+`var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);`
+`loader.load()
+  .catch(function (error) { console.error(error); });`
