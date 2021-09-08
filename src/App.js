@@ -25,9 +25,8 @@ function App() {
         >
           Learn React
         </a>
-
         <Helmet>
-          <script src="https://d1olhb9k3nup61.cloudfront.net/lex-web-ui-loader.min.js" type="text/javascript"/>
+          <script src="https://d1olhb9k3nup61.cloudfront.net/lex-web-ui-loader.min.js"></script>
           <script type="text/javascript">
             var loaderOpts = {
               baseUrl: 'https://d1olhb9k3nup61.cloudfront.net/',
@@ -37,7 +36,7 @@ function App() {
             loader.load()
               .catch(function (error) { console.error(error); });
           </script>
-         </Helmet>
+        </Helmet>
 
       </header>
     </div>
