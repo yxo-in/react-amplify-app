@@ -26,16 +26,8 @@ function App() {
           Learn React
         </a>
         <Helmet>
-          <script src="https://d1olhb9k3nup61.cloudfront.net/lex-web-ui-loader.min.js"></script>
-          <script type="text/javascript">
-            var loaderOpts = {
-              baseUrl: 'https://d1olhb9k3nup61.cloudfront.net/',
-              shouldLoadMinDeps: true
-            };
-            var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-            loader.load()
-              .catch(function (error) { console.error(error); });
-          </script>
+          <script type="text/javascript" src="https://d1olhb9k3nup61.cloudfront.net/lex-web-ui-loader.min.js"></script>
+          <script type="text/javascript" src="lex.js"></script>
         </Helmet>
 
       </header>
