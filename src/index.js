@@ -11,23 +11,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-<script src="https://d1olhb9k3nup61.cloudfront.net/lex-web-ui-loader.min.js"></script>
-  var NewComponent = React.createClass({
-    render: function() {
-      return (
-        <div>
-          var loaderOpts = {'{'}
-          `baseUrl: 'https://d1olhb9k3nup61.cloudfront.net/',
-          shouldLoadMinDeps: true`
-          {'}'};
-          var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-          loader.load()
-          .catch(function (error) {'{'} console.error(error) {'}'});
-        </div>
-      );
-    }
-  });
-
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

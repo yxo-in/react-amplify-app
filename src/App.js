@@ -14,7 +14,8 @@ function App() {
         <h3>Activity log</h3>
         
         <a>Initial - 16082021 <br></br> 
-        update 1 : test lex : 05092021
+        update 1 : test lex : 05092021<br></br> 
+        update 2 : test lex : 22092021
         </a>
 
         <a
@@ -25,21 +26,6 @@ function App() {
         >
           Learn React
         </a>
-        <div>
-          <Helmet>
-            <script src="https://d1olhb9k3nup61.cloudfront.net/lex-web-ui-loader.min.js"></script>
-              <script> 
-                var loaderOpts = {
-                  `baseUrl: 'https://d1olhb9k3nup61.cloudfront.net/',
-                  shouldLoadMinDeps: true`
-                };
-                var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-                loader.load()
-                  .catch(function (error) { console.error(error) });
-              </script>
-  
-          </Helmet>
-        </div>
 
       </header>
     </div>
